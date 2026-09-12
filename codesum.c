@@ -1,11 +1,13 @@
 #include <stdio.h>
-int main() {
-    int a;
-    int b;
-
-    prntf("enter your input");
-    scanf ("%d"  "%d" &a ,&b);
-
-    printf("%d" "sum of number");
-    return 0 ;
-} 
+int main(){
+    int a = 0;
+    int b = 1;
+    int n=5;
+    for(int i=0 ;i<=10;i++){
+        printf("%d" , a);
+        int NextTerm = a+b;
+        a=b;
+        b=NextTerm;
+    }
+    return 0;
+}
