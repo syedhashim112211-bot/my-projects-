@@ -72,6 +72,23 @@ void palindrome_str(char str[]){
         printf("not palindrome");
     }
 }
+//cocatinate
+void concatinate(char str[]){
+    char str4[str_len(str)+2];
+    printf("enter second string");
+    fgets(str4,sizeof(str4),stdin);
+    int i=0;
+    int j=0;
+    while(str[i]!='\0'){
+        i++;
+    }
+    while(str[j]!='\0'){
+        str[i]=str4[j];
+        i++;
+        j++;
+    }
+    printf("concatinated string= %s",str);
+}
 
 
 int main(){
@@ -85,5 +102,6 @@ int main(){
 //printf("%d", str_compare(str));
 //rev_str(str);
 //ptr_rev(str);
-palindrome_str(str);
+//palindrome_str(str);
+concatinate(str);
 }
